@@ -20,7 +20,6 @@ end
 @womens_stores = Store.where("annual_revenue < 1000000 AND womens_apparel = true")
 
 puts "----- womens -----"
-
 @womens_stores.each do |store|
   puts "#{store.name}: $#{store.annual_revenue} annual revenue"
 end
